@@ -1,0 +1,57 @@
+header
+	height: 450px
+	//background: $header-bg
+
+	.logo 
+		+size(100px)
+		//background: #999
+		//background: url(../img/logo.png) no-repeat
+		//background-size: 50px 50px
+		float: left
+		margin: 10px 0 0 30px
+		
+		#svg_logo
+			fill: rgba(0,0,0,0.6)
+	nav
+		float: right
+		margin: 30px 30px 0 0
+
+		a
+			display: inline-block
+			margin-left: 20px
+			color: $link-color
+			@extend %main-links
+			padding-bottom: 4px
+			@include transition(border 0.5s ease)
+			//transition: border 0.5s ease
+
+			&:hover
+				color: rgba(0,0,0,0.9)
+				border-bottom: 3px solid $hover-underline
+	h1
+		font: 
+			size: 72px
+			weight: 700
+		color: white
+		text-transform: uppercase
+		letter-spacing: .05em
+		text-align: center
+		margin-bottom: 20px
+		padding-top: 90px
+		
+		clear: both
+		
+		span
+
+			display: inline-block
+			padding: 0.25em 0.3em
+			border: 10px solid white
+	.kicker
+		text-align: center
+		font:
+			weight: 700
+
+		color: $accent-color
+		text-transform: uppercase
+		letter-spacing: .05em
+
