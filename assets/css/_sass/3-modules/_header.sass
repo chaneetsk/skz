@@ -1,14 +1,15 @@
 header
-	height: 450px
-	//background: $header-bg
+	height: 440px
 
 	.logo 
-		+size(100px)
-		//background: #999
-		//background: url(../img/logo.png) no-repeat
-		//background-size: 50px 50px
+		+size(50px)
+		background: url(../img/logo.svg) no-repeat, $bg-color
+		background-size: 50px 50px
+		background-blend-mode: overlay, normal
+
 		float: left
 		margin: 10px 0 0 30px
+		border-radius: 50%
 		
 		#svg_logo
 			fill: rgba(0,0,0,0.6)
@@ -23,7 +24,6 @@ header
 			@extend %main-links
 			padding-bottom: 4px
 			@include transition(border 0.5s ease)
-			//transition: border 0.5s ease
 
 			&:hover
 				color: rgba(0,0,0,0.9)
@@ -42,10 +42,10 @@ header
 		clear: both
 		
 		span
-
 			display: inline-block
 			padding: 0.25em 0.3em
 			border: 10px solid white
+
 	.kicker
 		text-align: center
 		font:

@@ -1,0 +1,34 @@
+#-------------------
+#General Site Settings
+
+title: Sanjeet Kanwar
+email: contact@sanjeet.com.au
+description: "Freelance Web Developer located in Sydney"
+skavatar: head-shot.png
+
+#-------------------
+#Menu Item List
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Contact, url: '#contact'}
+
+
+#-------------------
+#SEO Section
+
+
+
+
+#-------------------
+#About Section
+blurb: "<strong>Sanjeet makes nice websites. </strong> He wants to develop his skill set to the max, through focusing on loads of side projects but instead most of his free time goes in sleeping."
+
+
+
+
+
+
+
+

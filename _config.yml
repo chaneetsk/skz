@@ -1,8 +1,3 @@
-# Site settings
-title: Sanjeet Kanwar
-email: contact@sanjeet.com.au
-description: "Freelance Web Developer located in Sydney"
-blurb: "<strong>Sanjeet Kanwar</strong>"
 
 #Build settings
 markdown: kramdown
