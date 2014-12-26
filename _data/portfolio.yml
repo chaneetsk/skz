@@ -4,13 +4,14 @@
 title: Sanjeet Kanwar
 email: contact@sanjeet.com.au
 description: "Freelance Web Developer located in Sydney"
-skavatar: head-shot.png
+avatar: head-shot.png
+logo: logo.svg
 
 #-------------------
 #Menu Item List
 
 menu:
-- {name: About Me, url: '#about-me'}
+- {name: About Me, url: '#aboutme'}
 - {name: Work, url: '#work'}
 - {name: Contact, url: '#contact'}
 
@@ -26,9 +27,11 @@ menu:
 blurb: "<strong>Sanjeet makes nice websites. </strong> He wants to develop his skill set to the max, through focusing on loads of side projects but instead most of his free time goes in sleeping."
 
 
-
-
-
-
-
+skills:
+- {name: Communication, level: skill-7}
+- {name: Organization, level: skill-7}
+- {name: Learning, level: skill-7}
+- {name: Teaching, level: skill-5}
+- {name: Programming, level: skill-7}
+- {name: Planning, level: skill-7}
 

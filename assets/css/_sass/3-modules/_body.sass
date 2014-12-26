@@ -1,4 +1,7 @@
 html
-	background: url(../img/bg.jpg) no-repeat center center fixed
-	background-size: cover
-	background-position: fixed
+	background-image: url(../img/#{$logo-path}), url(../img/bg.jpg)
+	background-repeat: no-repeat, no-repeat
+	background-size: 50px 50px, cover
+	background-position: 50px 30px, center center
+	background-blend-mode: overlay, normal
+	background-attachment: scroll, fixed

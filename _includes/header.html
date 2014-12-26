@@ -3,9 +3,9 @@
 		<!-- {% include icons/logo.html %} -->
 	</div>
 	<nav>
-		<a href="#aboutme">About</a>
-		<a href="#mywork">Work</a>
-		<a href="#contactme">Contact</a>
+		{% for item in site.data.portfolio.menu %}
+			<a href="{{ item.url }}">{{ item.name }}</a>
+		{% endfor %}
 	</nav>
 
 	<h1><span>{{ site.data.portfolio.title }}</span></h1>

@@ -19,53 +19,13 @@
 
 
 	<div class="skill-front">
-		<div class="skill-unit">
-			<div class="skill-label">Communication</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		{% for item in site.data.portfolio.skills %}
+			<div class="skill-unit">
+				<div class="skill-label">{{ item.name }}</div>
+				<div class="skill-icons {{ item.level }}">
+					<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+				</div>
 			</div>
-
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Organization</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Learning</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Teaching</div>
-			<div class="skill-icons skill-5">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Programming</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Planning</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-
-		</div>
-
+		{% endfor %}
 	</div>
 </section>

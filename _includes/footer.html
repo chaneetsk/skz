@@ -2,10 +2,9 @@
 	<div class="footer-warp">
 		<div class="logo"></div>
 		<div class="content-warp">
-			<a href="">About</a>
-			<a href="">Work</a>
-			<a href="">Contact</a>
-		
+			{% for item in site.data.portfolio.menu %}
+				<a href="{{ item.url }}">{{ item.name }}</a>
+			{% endfor %}
 			<div class="copyright">All Content Copyright 2014</div>
 		</div>
 
