@@ -1,0 +1,16 @@
+<section class="alt-section">
+	<h3 id="work">Work</h3>
+
+	<div class="thumb-wrapper">
+		{% for work in site.data.portfolio.works %}
+		<a href="" class="thumb-unit" style=" background-image: url(/assets/img/work/{{ work.folder }});">
+			<div class="thumb-overlay">
+				<strong>{{ work.name }}</strong>
+				<div class="zoom-icon"></div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+
+
+</section>

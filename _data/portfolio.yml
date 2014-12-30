@@ -35,3 +35,16 @@ skills:
 - {name: Programming, level: skill-7}
 - {name: Planning, level: skill-7}
 
+
+#---------------------
+#Work Section
+
+works:
+- {name: Project Jaymz Hetfield, folder: p1.png}
+- {name: Project 2, folder: p2.png}
+- {name: Project 3, folder: p3.png}
+- {name: Project 4, folder: p4.png}
+- {name: Project 5, folder: p5.png}
+- {name: Project 6, folder: p6.png}
+- {name: Project 7, folder: p7.png}
+- {name: Project 8, folder: p8.png}
