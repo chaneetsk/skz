@@ -40,11 +40,21 @@ skills:
 #Work Section
 
 works:
-- {name: Project Jaymz Hetfield, folder: p1.png}
-- {name: Project 2, folder: p2.png}
-- {name: Project 3, folder: p3.png}
-- {name: Project 4, folder: p4.png}
-- {name: Project 5, folder: p5.png}
-- {name: Project 6, folder: p6.png}
-- {name: Project 7, folder: p7.png}
-- {name: Project 8, folder: p8.png}
+- {name: Project 1, folder: work-1}
+- {name: Project 2, folder: work-2}
+- {name: Project 3, folder: work-3}
+- {name: Project 4, folder: work-4}
+- {name: Project 5, folder: work-5}
+- {name: Project 6, folder: work-6}
+- {name: Project 7, folder: work-7}
+- {name: Project 8, folder: work-8}
+
+#--------------------
+#Client Section
+
+clients:
+- {avatar: 'c1.jpg', name: 'Jaymz Hetfield', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo1.jpeg'}
+- {avatar: 'c2.jpg', name: 'Lars Urich', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo2.jpeg'}
+- {avatar: 'c3.jpg', name: 'Robert Trujillo', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo3.jpeg'}
+- {avatar: 'c4.jpg', name: 'Kirk Hammet', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo4.jpeg'}
+

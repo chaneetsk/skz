@@ -1,3 +1,19 @@
+.section-work
+	overflow-x: hidden
+
+	.work-belt
+		width: 200%
+		position: relative
+		left: 0%
+		+transition(all 800ms)
+		
+
+.work-container, .thumb-container
+	width: 50%
+	float: left
+
+
+
 .alt-section
 	background: $bg-color
 
@@ -18,16 +34,16 @@
 			position: relative
 			padding-top: 16%
 			overflow: hidden
-
-			@media screen and (max-width: 760px)
-				width: 50%
-				padding-top: 26%
-
+			cursor: pointer
 
 			background: 
 				position: center center
 				repeat: no-repeat
 				size: cover
+
+			@media screen and (max-width: 760px)
+				width: 50%
+				padding-top: 26%
 
 			+perspective(300)
 
@@ -49,7 +65,7 @@
 					color: $white
 					font-weight: 300
 					text-transform: uppercase
-					font-size: 24px
+					font-size: 1.7em
 					line-height: 1.2
 
 
@@ -57,3 +73,50 @@
 			&:hover .thumb-overlay
 				+position(absolute, 0% 0px 0px 0px)
 				+transform(rotateX(0deg))
+
+@media screen and (max-width: 760px)
+	.thumb-wrapper
+		padding-left: 5px
+		padding-right: 5px
+
+
+.work-wrapper
+	max-width: 600px
+	margin: 0 auto
+	position: relative
+	display: none
+
+	h4
+		color: $accent-color
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 1.5em
+		line-height: 1.2
+		margin: 0 0 20px
+
+	img
+		width: 100%
+		margin-bottom: 20px
+
+	.work-return
+		+size(40px)
+		cursor: pointer
+		opacity: 0.5
+		+position(absolute, -4px null null -60px)
+
+		&:hover
+			opacity: 1
+
+@media screen and (max-width: 740px)
+	.work-wrapper
+
+		.work-return
+			left: 0px
+		
+		h4
+			margin-left: 60px
+
+
+
+
+

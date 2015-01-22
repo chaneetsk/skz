@@ -1,0 +1,102 @@
+#client-section
+	background: $white
+	position: relative
+
+	#clients
+		margin-top: 0px
+
+	.clients-belt
+		width: 100%
+		position: relative
+
+		.client-unit
+			max-width: 750px
+			margin: 0 auto 50px
+			display: none
+
+			&.active-client
+				+display(flex)
+				@extend %animation
+
+			.client-face
+				min-width: 300px
+				text-align: center
+
+				img
+					max-width: 128px
+					border-radius: 50%
+
+				.client-name
+					display: block
+					text-transform: uppercase
+					font-weight: 400
+					letter-spacing: 1px
+
+				.client-title
+					font-style: normal
+					font-size: 12px
+					color: #999 
+
+			.client-content
+				font-size: 18px
+				line-height: 36px
+				font-weight: 300
+				margin-top: -10px
+				position: relative
+				opacity: 0.99
+
+	.clients-logos
+		position: relative
+		width: 100%
+		max-width: 960px
+		margin: 0 auto
+		padding-bottom: 100px
+		+display(flex)
+		+align-items(space-around)
+		+justify-content(center)
+
+		.client-logo
+			height: 88px
+			min-width: 200px
+			background: 
+				image: url(/assets/img/clients/olympic-logo.png)
+				size: contain
+				position: center
+				repeat: no-repeat
+			cursor: pointer
+			margin: 0 20px
+
+			&.active-client
+				box-shadow: 0px 4px 1px $accent-color
+
+
+.client-quote-mark
+	z-index: -1
+	+size(60px)
+	opacity: 0.4
+	svg
+		path
+			fill: $accent-color
+
+	&.quote-on
+		+position(absolute, -15px null null -15px)
+
+	&.quote-off
+		+position(absolute, null -10px 5px null)
+
+
+.client-controls
+	+position(absolute, 0px 0px 0px 0px)
+	
+
+	> div
+		+size(28px 50px)
+		margin-top: -25px
+		cursor: pointer
+		z-index: 2
+
+	.client-control-prev
+		+position(absolute, 50% 10px null null)
+
+	.client-control-next
+		+position(absolute, 50% null null 10px)
