@@ -1,0 +1,16 @@
+<section class="section-contact">
+	<h3 id="contact">Contact</h3>
+
+	<div class="social-link">
+		{% for social in site.data.portfolio.social %}
+		<a href="{{ social.link }}" class="{{ social.icon }}"></a>
+		{% endfor %}
+		<a href="tel:{{ site.data.portfolio.tele }}" class="icon-phone-square mobile"></a>
+	</div>
+
+	<hr class="bar"/>
+
+	<a href="mailto:{{ site.data.portfolio.email }}" class="biglink">{{ site.data.portfolio.email }}</a>
+
+</section>
+

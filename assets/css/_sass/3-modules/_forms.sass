@@ -1,0 +1,66 @@
+.form-section
+	background: $white
+
+	h3
+		margin-top: 0px
+
+	form
+		max-width: 550px
+		margin: 0 auto 0
+
+		input, textarea
+			border: 1px solid rgba(0,0,0,0)
+			border-top-color: $accent-light
+			//border: none
+			width: 100%
+			+box-sizing(border-box)
+			padding: 10px
+			font:
+				size: 18px
+			background: transparent
+			color: black
+
+			&:focus
+				outline: none
+				//border: 1px solid $accent-light
+
+		.submit-wrap
+			text-align: right
+
+		[type="button"]
+			background: $accent-color
+			color: white
+			font-size: 18px
+			text-transform: uppercase
+			width: 35%
+			border: 1px solid $white
+
+			&:hover
+				background: $white
+				color: $accent-color
+				border-top: 1px solid $accent-light
+				border-bottom: 1px solid $accent-light
+
+			&:focus
+				outline: none
+
+		textarea
+			height: 9em
+			border-bottom-color: $accent-light
+
+			
+
+
+		label
+			display: block
+			margin-bottom: 20px
+
+		.notification
+			background: $white
+			opacity: 0.8
+			padding-top: 5px
+			text-align: center
+			text-transform: uppercase
+		
+		@media screen and (max-width:450px)
+			padding: 0 7px 0 7px

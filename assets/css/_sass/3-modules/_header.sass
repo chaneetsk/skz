@@ -1,5 +1,6 @@
 header
-	height: 440px
+	//height: 440px
+	padding-bottom: 40px
 	
 	nav
 		float: right
@@ -43,4 +44,16 @@ header
 		color: $accent-color
 		text-transform: uppercase
 		letter-spacing: .05em
+
+@media screen and (max-width:640px)
+	header
+		nav
+			float: none
+			text-align: center
+			padding-top: 60px
+		h1
+			padding-top: 0
+			font-size: 55px
+
+
 

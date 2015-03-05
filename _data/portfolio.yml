@@ -2,16 +2,17 @@
 #General Site Settings
 
 title: Sanjeet Kanwar
-email: contact@sanjeet.com.au
+email: hey@sanjeet.com.au
 description: "Freelance Web Developer located in Sydney"
 avatar: head-shot.png
 logo: logo.svg
+tele: '+61433854365'
 
 #-------------------
 #Menu Item List
 
 menu:
-- {name: About Me, url: '#aboutme'}
+- {name: About, url: '#aboutme'}
 - {name: Work, url: '#work'}
 - {name: Contact, url: '#contact'}
 
@@ -24,7 +25,8 @@ menu:
 
 #-------------------
 #About Section
-blurb: "<strong>Sanjeet makes nice websites. </strong> He wants to develop his skill set to the max, through focusing on loads of side projects but instead most of his free time goes in sleeping."
+blurb1: "<strong>Sanjeet makes nice websites. </strong> He wants to develop his skill set to the max, through focusing on loads of side projects but instead most of his free time goes in sleeping."
+blurb: "<strong>Avas</strong> the blurb sud go here.. 5 lines"
 
 
 skills:
@@ -53,8 +55,20 @@ works:
 #Client Section
 
 clients:
-- {avatar: 'c1.jpg', name: 'Jaymz Hetfield', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo1.jpeg'}
-- {avatar: 'c2.jpg', name: 'Lars Urich', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo2.jpeg'}
-- {avatar: 'c3.jpg', name: 'Robert Trujillo', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo3.jpeg'}
-- {avatar: 'c4.jpg', name: 'Kirk Hammet', title: 'Sr. Web Developer', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo4.jpeg'}
+- {avatar: 'c1.jpg', name: 'Jaymz Hetfield', title: 'Sr. Web Developer, Metallica', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo1.jpeg'}
+- {avatar: 'c2.jpg', name: 'Lars Urich', title: 'Sr. Web Developer, Metallica', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo2.jpeg'}
+- {avatar: 'c3.jpg', name: 'Robert Trujillo', title: 'Sr. Web Developer, Metallica', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo3.jpeg'}
+- {avatar: 'c4.jpg', name: 'Kirk Hammet', title: 'Sr. Web Developer, Metallica', quote: '<strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Culpa excepturi rerum doloribus quis amet aliquam numquam voluptatibus, dignissimos, voluptatem autem! Maxime ipsam quam eveniet quos aliquam reiciendis voluptatibus facere doloribus?', logo: 'logo4.jpeg'}
+
+
+#--------------------
+#Contact Section
+
+social:
+- {icon: 'icon-twitter-square' , link: 'http://twitter.com/chaneetsk'}
+- {icon: 'icon-facebook-square' , link: 'http://facebook.com/chaneet.sk'}
+- {icon: 'icon-linkedin-square' , link: 'http://au.linkedin.com/in/sanjeetkanwar/en'}
+- {icon: 'icon-instagram' , link: 'http://instagram.com/chaneet'}
+
+
 

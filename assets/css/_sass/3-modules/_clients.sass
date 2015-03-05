@@ -52,8 +52,8 @@
 		margin: 0 auto
 		padding-bottom: 100px
 		+display(flex)
-		+align-items(space-around)
-		+justify-content(center)
+		+align-items(center)
+		+justify-content(space-around)
 
 		.client-logo
 			height: 88px
@@ -65,9 +65,11 @@
 				repeat: no-repeat
 			cursor: pointer
 			margin: 0 20px
+			opacity: 0.5
 
 			&.active-client
 				box-shadow: 0px 4px 1px $accent-color
+				opacity: 1
 
 
 .client-quote-mark
@@ -82,7 +84,7 @@
 		+position(absolute, -15px null null -15px)
 
 	&.quote-off
-		+position(absolute, null -10px 5px null)
+		+position(absolute, null -10px 4px null)
 
 
 .client-controls
@@ -95,8 +97,59 @@
 		cursor: pointer
 		z-index: 2
 
-	.client-control-prev
+	.client-control-next
 		+position(absolute, 50% 10px null null)
 
-	.client-control-next
+	.client-control-prev
 		+position(absolute, 50% null null 10px)
+
+.client-mobile-nav
+	display: none
+	text-align: center
+	span
+		cursor: pointer
+		display: inline-block
+		+size(16px)
+		border-radius: 50%
+		border: solid 2px $bg-color
+		margin: 0px 10px
+
+		&.active-client
+			border-color: $accent-color
+
+
+@media screen and (max-width: 950px)
+	
+	#client-section
+
+		.client-controls
+			display: none
+
+		.clients-belt
+			overflow-x: hidden
+
+			.client-unit.active-client
+				display: block
+				position: relative
+				padding: null 30px null 30px
+
+				.client-face
+					margin-bottom: 20px
+
+				.client-content
+					text-align: center
+					max-width: 400px
+					margin: 0 auto
+
+					.client-quote-mark
+						&.quote-off
+							bottom: -10px
+
+		.clients-logos
+			display: none
+
+		.client-mobile-nav
+			display: block
+		
+
+

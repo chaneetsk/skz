@@ -2,8 +2,14 @@
 	<h3 id="clients">Clients</h3>
 
 	<div class="client-controls">
-		<div class="client-control-next">{% include icons/left-arrow.html %}</div>
-		<div class="client-control-prev">{% include icons/right-arrow.html %}</div>
+		<div class="client-control-prev">{% include icons/left-arrow.html %}</div>
+		<div class="client-control-next">{% include icons/right-arrow.html %}</div>
+	</div>
+
+	<div class="client-mobile-nav">
+		{% for i in (1..4)%}
+			<span></span>
+		{% endfor %}
 	</div>
 
 	<div class="clients-belt">
