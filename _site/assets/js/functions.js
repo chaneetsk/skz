@@ -135,6 +135,13 @@ function sendEmail() {
 				contentType: 'application/json',
 				complete: function(reObj,txtStatus) {
 					console.log(reObj.responseText);
+				},
+				success: function(data,txtStatus,reObj) {
+					console.log(reObj.responseText);
+					$('.message-sent').html('<span>'+ reObj.responseText +'</span>').animate({opacity:0,fontSize:"10em"},700,function(){
+						$('.message-sent').empty();
+						$('.message-sent').css({"font-size":"3em","opacity":"1"});
+					});
 				}
 			});
 			console.log(valid);
