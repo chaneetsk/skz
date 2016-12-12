@@ -15,35 +15,39 @@
 
 
 .alt-section
-	//background: $bg-color
+	background: $work-section-bg
 
 	h3
 		margin-top: 0px
 
 	.thumb-wrapper
-		max-width: 960px
+		max-width: 1000px
 		margin: 0 auto
 		padding-bottom: 100px
 		+clearfix()
 
 		.thumb-unit
-			width: 25%
+			width: 33.33%
+			border: 5px solid $work-section-bg
 			//height: 150px
 			display: block
 			float: left
 			position: relative
-			padding-top: 16%
+			padding-top: 20%
 			overflow: hidden
 			cursor: pointer
+			box-sizing: border-box
+
 
 			background: 
 				position: center center
 				repeat: no-repeat
-				size: cover
+				size: contain
 
 			@media screen and (max-width: 760px)
 				width: 50%
 				padding-top: 26%
+				margin: auto
 
 			+perspective(300)
 
