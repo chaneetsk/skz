@@ -3,9 +3,10 @@
 
 	<div class="social-link">
 		{% for social in site.data.portfolio.social %}
-		<a href="{{ social.link }}" class="{{ social.icon }}"></a>
+		<a href="{{ social.link }}"><i class="{{social.icon}}" aria-hidden="true"></i>
+</a>
 		{% endfor %}
-		<a href="tel:{{ site.data.portfolio.tele }}" class="icon-phone-square mobile"></a>
+		<a class="mobile" href="tel:{{ site.data.portfolio.tele }}"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
 	</div>
 
 	<hr class="bar"/>
@@ -13,4 +14,3 @@
 	<a href="mailto:{{ site.data.portfolio.email }}" class="biglink">{{ site.data.portfolio.email }}</a>
 
 </section>
-

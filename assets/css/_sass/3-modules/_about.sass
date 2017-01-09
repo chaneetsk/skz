@@ -1,7 +1,7 @@
 .about-wrap
 	background: rgba(255,255,255,1)
 	margin-top: 100px
-	
+
 .face-front
 	max-width: 780px
 	+display(flex)
@@ -14,30 +14,7 @@
 		//border-radius(50%)
 		background: url(/assets/img/#{$avatar-path}) no-repeat
 		background-size: 200px
-		+order(3)
-
-	[class^="icon-"]
-		+size(100px)
-		background: $bg-color
-		border-radius: 50%
-		position: relative
-
-		&.icon-css
-			+order(1)
-		&.icon-file
-			+order(2)
-		&.icon-mail
-			+order(4)
-		&.icon-xml
-			+order(5)
-
-		svg
-			position: absolute
-			top: 19%
-			left: 19%
-
-			path
-				fill: $accent-color
+		margin: 0 auto
 
 @media screen and (max-width: 650px)
 	.face-front
@@ -54,25 +31,20 @@
 			width: auto
 			margin-bottom: 30px
 
-		[class^="icon-"]
-			margin: 10px
-
-
-
 
 
 .blurb
 	max-width: 620px
 	padding: 0 15px
 	margin: 50px auto 50px
-	font-size: 1.5em
+	font-size: 1.25em
 	text-align: center
 
 .skill-front
 	max-width: 700px
 	margin: 100px auto 0 auto
 	padding-bottom: 50px
-	
+
 	+clearfix
 
 	.skill-unit
@@ -105,14 +77,10 @@
 					margin: 2px
 
 			@for $i from 1 through 10
-				&.skill-#{$i} 
+				&.skill-#{$i}
 					span:nth-child(-n+#{$i})
 						@extend %skill-color
 
 @media screen and (max-width: 700px)
 	.skill-front
 		width: 320px
-
-
-
-

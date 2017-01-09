@@ -1,7 +1,8 @@
 #-------------------
 #General Site Settings
 
-title: Sanjeet Kanwar
+title: Sanjeet Kanwar | Freelance Web Developer | Frontend Developer
+name: Sanjeet Kanwar
 email: hey@sanjeet.com.au
 description: "Freelance Web Developer in Sydney"
 avatar: head-shot.png
@@ -14,6 +15,7 @@ tele: '+61404373619'
 menu:
 - {name: About, url: '#aboutme'}
 - {name: Work, url: '#work'}
+- {name: Resume, url: 'https://www.sanjeet.com.au/resume'}
 - {name: Contact, url: '#contact'}
 
 
@@ -21,7 +23,7 @@ menu:
 #SEO Section
 
 seo:
-    description: 'Freelance Frontend Web Developer in Sydney. Design by Coding'
+    description: 'Freelance Web Developer | Frontend Developer in Sydney. Design by Coding'
     rel-author: 'http://au.linkedin.com/in/sanjeetkanwar/en'
     rel-publisher: 'http://au.linkedin.com/in/sanjeetkanwar/en'
 
@@ -29,17 +31,19 @@ seo:
 
 #-------------------
 #About Section
-#blurb1: "<strong>Sanjeet makes nice websites. </strong> He wants to develop his skill set to the max, through focusing on loads of side projects but instead most of his free time goes in sleeping."
-#blurb: "<strong>Avas</strong> the blurb sud go here.. 5 lines"
+blurb: "Sanjeet is a Freelance Web Developer and Frontend Developer located in Sydney, Australia."
 
 
 skills:
 - {name: Communication, level: skill-7}
-- {name: Organization, level: skill-7}
+- {name: Planning / Organization, level: skill-7}
 - {name: Learning, level: skill-7}
 - {name: Teaching, level: skill-5}
-- {name: Programming, level: skill-7}
-- {name: Planning, level: skill-7}
+- {name: HTML, level: skill-8}
+- {name: CSS, level: skill-8}
+- {name: JS / Jquery, level: skill-7}
+- {name: Wordpress Site Development, level: skill-7}
+
 
 
 #---------------------
@@ -69,8 +73,7 @@ clients:
 #Contact Section
 
 social:
-- {icon: 'icon-linkedin-square' , link: 'http://au.linkedin.com/in/sanjeetkanwar/en'}
-- {icon: 'icon-facebook-square' , link: 'http://facebook.com/chaneet.sk'}
-- {icon: 'icon-twitter-square' , link: 'http://twitter.com/chaneetsk'}
-- {icon: 'icon-instagram' , link: 'http://instagram.com/chaneet'}
-
+- {icon: 'fa fa-linkedin-square' , link: 'http://au.linkedin.com/in/sanjeetkanwar/en'}
+- {icon: 'fa fa-codepen' , link: 'https://codepen.io/chaneetsk/'}
+- {icon: 'fa fa-github-square' , link: 'https://github.com/chaneetsk'}
+- {icon: 'fa fa-instagram' , link: 'http://instagram.com/chaneet'}

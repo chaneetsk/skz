@@ -1,5 +1,6 @@
 .form-section
 	background: $white
+	padding-bottom: 2em
 
 	h3
 		margin-top: 0px
@@ -29,16 +30,19 @@
 			text-align: right
 
 		[type="button"]
-			background: $accent-color
-			color: white
+			//background: $accent-color
+			border-top: 1px solid $accent-light
+			border-bottom: 1px solid $accent-light
+			color: $accent-light
 			font-size: 18px
 			text-transform: uppercase
 			width: 35%
-			border: 1px solid $white
+			transition: 0.2s
+			//border: 1px solid $white
 
 			&:hover
-				background: $white
-				color: $accent-color
+				background: $accent-light
+				color: $white
 				border-top: 1px solid $accent-light
 				border-bottom: 1px solid $accent-light
 
@@ -49,7 +53,7 @@
 			height: 9em
 			border-bottom-color: $accent-light
 
-			
+
 
 
 		label
@@ -70,6 +74,6 @@
 			color: $accent-color
 			text-align: center
 			font-size: 1.3em
-		
+
 		@media screen and (max-width:450px)
 			padding: 0 7px 0 7px
