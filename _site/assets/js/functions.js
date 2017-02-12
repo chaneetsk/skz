@@ -12,7 +12,7 @@ $( document ).ready(function() {
 function smoothScroll(duration) {
 	$('a[href^="#"]').on('click', function(e){
 		var target = $($(this).attr('href'));
-		
+
 		if (target.length>0) {
 			e.preventDefault();
 			$('html, body').animate({
@@ -23,17 +23,23 @@ function smoothScroll(duration) {
 }
 
 function workBelt() {
+  var target = $('#work').offset().top;
+  console.log(target);
 	$('.thumb-unit').click(function() {
+    $('html, body').scrollTop(target);
 		$('.work-belt').css('left','-100%');
 		$('.work-wrapper').show();
-
+    setTimeout(function(){
+      $('.thumb-wrapper').addClass("thumb-wrap-hidden");
+    },800);
 	});
 
-	$('.work-return').click(function(){
+	$('.work-return, .work-return-bottom').click(function(){
 		$('.work-belt').css('left','0%');
-		$('.work-wrapper').hide(700);
+    $('.work-wrapper').hide(700);
+    $('.thumb-wrapper').removeClass("thumb-wrap-hidden");
+    $('html, body').scrollTop(target);
 	});
-
 }
 
 function workLoad() {
@@ -130,7 +136,7 @@ function sendEmail() {
 		if(valid === true) {
 			$.ajax({
 				type: "POST",
-				url: "http://www.sanjeet.com.au/mailApi/mail.php",
+				url: "/mailApi/mail.php",
 				crossDomain: true,
 				data: JSON.stringify(msgJson),
 				contentType: 'application/json',
@@ -147,7 +153,7 @@ function sendEmail() {
 			});
 			//console.log(valid);
 			//console.log(msgJson);
-			
+
 			//console.log(JSON.stringify(msgJson));
 		}
 
@@ -155,7 +161,7 @@ function sendEmail() {
 		$('#form-email').val("");
 		$('#form-msg').val("");
 	});
-	
+
 }
 
 /*
@@ -174,22 +180,22 @@ function smoothScroll(duration) {
 			var result = target.split('#');
 			var result = "#".concat(result[1]);
 			console.log(result);
-			
+
 			$('html,body').animate({
 				scrollTop: $(result).offset().top
 			},duration,function(){
-				
+
 			});
 		} else {
 			e.preventDefault();
 			var target = $(this).attr("href");
 			window.location.href = target;
 			console.log(target);
-			
+
 		}
 	}
 
-	
+
 	$('a[href*=#]').on('click',jump);
 
 	 if (location.hash){
@@ -211,7 +217,7 @@ function smoothScroll(duration) {
 		if (location.host == "127.0.0.1:4000" && location.pathname == "/" ) {
 			// e.preventDefault();
 			console.log("inside");
-			
+
 			var target = $(this).attr("href");
 
 			//var target = $($(this).attr("href"));
@@ -219,12 +225,12 @@ function smoothScroll(duration) {
 			console.log("outside");
 			var target = $(this).attr("href");
 		}
-	
+
 		//var target = $($(this).attr("href"));
 		//var target = location.hash;
 		//console.log("clicked");
 		console.log(target);
-		
+
 		if (target.length>0) {
 			//e.preventDefault();
 			$('html, body').animate({

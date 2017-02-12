@@ -1,18 +1,17 @@
 .section-work
 	overflow-x: hidden
+	margin-top: 6em
 
 	.work-belt
 		width: 200%
 		position: relative
 		left: 0%
 		+transition(all 800ms)
-		
+
 
 .work-container, .thumb-container
 	width: 50%
 	float: left
-
-
 
 .alt-section
 	background: $work-section-bg
@@ -21,15 +20,15 @@
 		margin-top: 0px
 
 	.thumb-wrapper
-		max-width: 1000px
+		position: relative
+		max-width: 1600px
 		margin: 0 auto
 		padding-bottom: 100px
 		+clearfix()
 
 		.thumb-unit
 			width: 33.33%
-			border: 5px solid $work-section-bg
-			//height: 150px
+			//border: 5px solid $work-section-bg
 			display: block
 			float: left
 			position: relative
@@ -37,46 +36,53 @@
 			overflow: hidden
 			cursor: pointer
 			box-sizing: border-box
+			height: 233px
+			+transition(0.5s)
 
-
-			background: 
+			background:
 				position: center center
 				repeat: no-repeat
-				size: contain
+				size: auto
 
-			@media screen and (max-width: 760px)
+			@media screen and (max-width: 770px)
 				width: 50%
 				padding-top: 26%
 				margin: auto
+				background-size: 200px
+			@media screen and (max-width: 500px)
+				width: 100%
 
 			+perspective(300)
 
 			.thumb-overlay
 				+position(absolute, 0% 0px 0px 0px)
 				height: 100%
-				background: fade-out($accent-color,0.3)
+				background: fade-out($accent-color,0)
 				+transition(0.5s)
-				text-align: center
+				text-align: left
 				+display(flex)
-				+align-items(center)
+				+align-items(flex-start)
 				+justify-content(space-around)
-				+transform(rotateX(90deg))
-				
+				+transform(translateY(101%))
+
 
 				strong
-					padding: 0px 20px
+					padding: 10px 20px
 					display: block
 					color: $white
-					font-weight: 300
+					font-weight: bold
 					text-transform: uppercase
-					font-size: 1.7em
+					font-size: 1em
 					line-height: 1.2
+					width: 100%
 
 
 
 			&:hover .thumb-overlay
 				+position(absolute, 0% 0px 0px 0px)
-				+transform(rotateX(0deg))
+				+transform(translateY(80%))
+			&:hover
+				+transform(scale(0.98))
 
 @media screen and (max-width: 760px)
 	.thumb-wrapper
@@ -89,6 +95,7 @@
 	margin: 0 auto
 	position: relative
 	display: none
+	padding: 0 5px
 
 	h4
 		color: $accent-color
@@ -111,16 +118,56 @@
 		&:hover
 			opacity: 1
 
+.work-container
+	.project-load
+		h5
+			margin-bottom: 0
+		a
+			display: inline-block
+			width: 9em
+			line-height: 3em
+			text-align: center
+			background: $link-color
+			margin-top: 20px
+			color: $white
+			transition: color 0.5s ease
+			text-transform: uppercase
+			font-weight: 600
+			&:hover
+				color: #2E2D33
+		i
+			margin-left: 5px
+	.work-return-bottom
+		display: inline-flex
+		line-height: 2.777em
+		cursor: pointer
+		+transition(0.5s)
+		i
+			font-size: 2.777em
+			color: transparentize($accent-color,0.2)
+		span
+			margin-left: 5px
+			display: inline-block
+			color: transparentize($accent-color,0.2)
+		&:hover i
+			color: $accent-color
+		&:hover span
+			color: $accent-color
+
+
+
+//hide first half of the belt
+.thumb-wrap-hidden
+	visibility: hidden !important
+	opacity: 0 !important
+	height: 0 !important
+	overflow: hidden !important
+
 @media screen and (max-width: 740px)
 	.work-wrapper
 
 		.work-return
 			left: 0px
-		
+
 		h4
 			margin-left: 60px
-
-
-
-
-

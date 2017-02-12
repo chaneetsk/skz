@@ -1,7 +1,1 @@
-<svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-
- <g>
-  <circle fill="rgba(0,0,0,0.5" id="svg_logo" r="23.895609" cy="24.874999" cx="24.999999" stroke-width="0"/>
-  <text xml:space="preserve" text-anchor="middle" font-family="Helvetica, Arial" font-size="20" id="svg_3" y="33.25" x="24.75" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#ffffff">SK</text>
- </g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.14 319.14"><defs><style>.cls-1{fill:none;stroke:#66b9bf;stroke-miterlimit:10;stroke-width:12px;}.cls-2{font-size:178.88px;fill:#66b9bf;font-family:Helvetica;}</style></defs><title>logo</title><circle class="cls-1" cx="159.57" cy="159.57" r="153.57"/><text class="cls-2" transform="translate(36.27 223.49)">SK</text></svg>

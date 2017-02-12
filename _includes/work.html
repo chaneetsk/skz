@@ -1,11 +1,11 @@
 <section class="alt-section section-work">
-	<h3 id="work">Work</h3>
-	
+	<h3 id="work">Portfolio</h3>
+
 	<div class="work-belt">
 		<div class="thumb-container">
 			<div class="thumb-wrapper">
 				{% for work in site.data.portfolio.works %}
-				<div class="thumb-unit" data-folder="{{ work.folder }}" style=" background-image: url(/assets/img/work/{{ work.folder }}/thumb.png);">
+				<div class="thumb-unit" data-folder="{{ work.folder }}" style="background: #{{work.bg-color}}; background-image: url(/assets/img/work/{{ work.folder }}/thumb.png); background-repeat: no-repeat; background-position: center;">
 					<div class="thumb-overlay">
 						<strong>{{ work.name }}</strong>
 						<div class="zoom-icon"></div>
@@ -19,9 +19,8 @@
 			<div class="work-wrapper">
 				<div class="work-return">{% include icons/icon-back.html %}</div>
 				<h4 class="project-title"></h4>
-				<div class="project-load">
-					
-				</div>
+				<div class="project-load"></div>
+				<div class="work-return-bottom"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i><span> back</span></div>
 			</div>
 		</div>
 

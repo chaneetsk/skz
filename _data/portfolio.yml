@@ -4,7 +4,7 @@
 title: Sanjeet Kanwar | Freelance Web Developer | Frontend Developer
 name: Sanjeet Kanwar
 email: hey@sanjeet.com.au
-description: "Freelance Web Developer in Sydney"
+description: "Freelance Developer && Frontend Developer in Sydney"
 avatar: head-shot.png
 logo: logo.png
 tele: '+61404373619'
@@ -13,8 +13,8 @@ tele: '+61404373619'
 #Menu Item List
 
 menu:
+- {name: Portfolio, url: '#work'}
 - {name: About, url: '#aboutme'}
-- {name: Work, url: '#work'}
 - {name: Resume, url: 'https://www.sanjeet.com.au/resume'}
 - {name: Contact, url: '#contact'}
 
@@ -31,18 +31,18 @@ seo:
 
 #-------------------
 #About Section
-blurb: "Sanjeet is a Freelance Web Developer and Frontend Developer located in Sydney, Australia."
+blurb: "Sanjeet is a Freelance Developer and Frontend Developer located in Sydney, Australia."
 
 
 skills:
-- {name: Communication, level: skill-7}
-- {name: Planning / Organization, level: skill-7}
-- {name: Learning, level: skill-7}
-- {name: Teaching, level: skill-5}
 - {name: HTML, level: skill-8}
 - {name: CSS, level: skill-8}
-- {name: JS / Jquery, level: skill-7}
-- {name: Wordpress Site Development, level: skill-7}
+- {name: JS / JQuery, level: skill-7}
+- {name: Wordpress, level: skill-7}
+- {name: Communication, level: skill-8}
+- {name: Planning / Organizing, level: skill-8}
+- {name: Learning, level: skill-8}
+- {name: Teaching, level: skill-7}
 
 
 
@@ -50,14 +50,14 @@ skills:
 #Work Section
 
 works:
-- {name: Swift Cars Haslemere, folder: work-6}
-- {name: ABC Taxi Service, folder: work-5}
-- {name: Ozystudy Visa, folder: work-4}
-- {name: Station Cark Hook, folder: work-3}
-- {name: Madan Puraskar Library, folder: work-2}
-- {name: Little Momo Newtown, folder: work-1}
-#- {name: Project 7, folder: work-7}
-#- {name: Project 8, folder: work-8}
+- {name: Mini EarthWorx, folder: work-8, bg-color: f44336}
+- {name: Casada Construction, folder: work-7, bg-color: 03a9f4}
+- {name: Swift Cars Haslemere, folder: work-6, bg-color: 4caf50}
+- {name: Station Cars Hook, folder: work-5, bg-color: 041821}
+- {name: Madan Puraskar Library, folder: work-4}
+- {name: Little Momo Newtown, folder: work-3, bg-color: fff}
+- {name: Ozystudy Visa, folder: work-2}
+- {name: Static Resume using ReactJS, folder: work-1, bg-color: ccc}
 
 #--------------------
 #Client Section
@@ -74,6 +74,6 @@ clients:
 
 social:
 - {icon: 'fa fa-linkedin-square' , link: 'http://au.linkedin.com/in/sanjeetkanwar/en'}
+- {icon: 'fa fa-twitter' , link: 'https://twitter.com/heysanjeet'}
 - {icon: 'fa fa-codepen' , link: 'https://codepen.io/chaneetsk/'}
 - {icon: 'fa fa-github-square' , link: 'https://github.com/chaneetsk'}
-- {icon: 'fa fa-instagram' , link: 'http://instagram.com/chaneet'}
